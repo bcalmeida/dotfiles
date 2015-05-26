@@ -1,0 +1,7 @@
+[alias]
+	lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	name = Bruno Almeida
+	email = bruno.correia.almeida@gmail.com
+[core]
+	editor = vim
