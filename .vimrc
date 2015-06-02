@@ -51,6 +51,10 @@ autocmd FileType python set shiftwidth=4|set tabstop=4|set expandtab|set softtab
 " JavaScript
 autocmd FileType javascript set shiftwidth=4|set tabstop=4|set expandtab|set softtabstop=4
 
+" CoffeeScript
+" No tabs. Tabs are 4 space characeters.
+autocmd BufEnter *.coffee set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
+
 " HTML
 autocmd FileType html set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
 
