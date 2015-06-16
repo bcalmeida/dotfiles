@@ -25,7 +25,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fireplace'
 Plugin 'paredit.vim'
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -70,7 +69,6 @@ set smartindent
 
 " Python
 autocmd FileType python set shiftwidth=4|set tabstop=4|set expandtab|set softtabstop=4
-" Python extras
 " set textwidth=79  " lines longer than 79 columns will be broken
 " set shiftround    " round indent to multiple of 'shiftwidth'
 " set autoindent    " align the new line indent with the previous line
@@ -87,6 +85,11 @@ autocmd FileType html set shiftwidth=2|set tabstop=2|set expandtab|set softtabst
 
 " Cucumber
 autocmd BufNewFile,BufReadPost *.feature set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
+
+" Clojure - Hoplon
+" Could also just use ':set filetype=clojure'
+" To override any detected filetype, use it like 'set filetype=clojure'
+autocmd BufRead,BufNewFile *.cljs.hl setfiletype clojure
 
 " ==== ETC ====
 " Per-directory .vimrc
