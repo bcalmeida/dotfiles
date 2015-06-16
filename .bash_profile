@@ -10,3 +10,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 # Sources whatever is in .env when cd'ing to the directory
 # Good for virtual environment and environment variables
 source /usr/local/opt/autoenv/activate.sh
+
+# Vi mode
+set -o vi
