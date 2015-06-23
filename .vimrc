@@ -58,6 +58,13 @@ set autoread
 set autoindent
 set smartindent
 
+" Highlight line
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+
 " ==== Language specific indentation ====
 " shiftwidth: size of indentation operations (=tabstop)
 " tabstop: tab size
@@ -74,7 +81,7 @@ autocmd FileType python set shiftwidth=4|set tabstop=4|set expandtab|set softtab
 " set autoindent    " align the new line indent with the previous line
 
 " JavaScript
-autocmd FileType javascript set shiftwidth=4|set tabstop=4|set expandtab|set softtabstop=4
+autocmd FileType javascript set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
 
 " CoffeeScript
 " No tabs. Tabs are 4 space characeters.

@@ -12,4 +12,4 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 source /usr/local/opt/autoenv/activate.sh
 
 # Vi mode
-set -o vi
+# set -o vi

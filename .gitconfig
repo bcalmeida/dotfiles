@@ -5,3 +5,4 @@
 	email = bruno.correia.almeida@gmail.com
 [core]
 	editor = vim
+	excludesfile = /Users/bcalmeida/.gitignore_global
