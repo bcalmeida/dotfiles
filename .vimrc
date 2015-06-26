@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 " Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
+Plugin 'w0ng/vim-hybrid'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'
@@ -29,26 +30,29 @@ Plugin 'paredit.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" ==== Plugin specifics ====
+" ==== Color Schemes ====
 " Solarized
-colorscheme solarized 			" Set solarized as color scheme
-" let g:solarized_termcolors=256 	" When not using solarized color palette
+" colorscheme solarized
+" let g:solarized_termcolors=256 	" Only when not using solarized color palette
 
-" Molokai - Not in use
+" Molokai
 " colorscheme molokai
 " let g:molokai_original = 1
+
+" Hybrid
+let g:hybrid_use_Xresources = 1		" When using hybrid color palette
+colorscheme hybrid
+
+" ==== Plugin specifics ====
 
 " NERDTree
 " NERDTreeTabs
 map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
-" vim-coffee-script
-" ...
-
 " ==== General ====
 syntax on
-set t_Co=256" 256 colors
-set background=light
+set t_Co=256	" 256 colors
+set background=dark
 set hls		" Highlight search
 set number	" Show line numbers
 set title	" Title of file on tab
