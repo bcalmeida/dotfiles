@@ -2,18 +2,26 @@
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+function init_file {
+	if [ -f $1 ]; then
+		rm ~/$1
+	fi
+	ln -s ${BASEDIR}/$1 ~/$1
+	echo "$1 initiated"
+}
+
 # vim
-ln -s ${BASEDIR}/.vimrc ~/.vimrc
+init_file .vimrc
 
 # git
-ln -s ${BASEDIR}/.gitconfig ~/.gitconfig
-ln -s ${BASEDIR}/.gitignore_global ~/.gitignore_global
+init_file .gitconfig
+init_file .gitignore_global
 
 # bash
-ln -s ${BASEDIR}/.bash_profile ~/.bash_profile
+init_file .bash_profile
 
 # zsh
-ln -s ${BASEDIR}/.zshrc ~/.zshrc
+init_file .zshrc
 
 # vi mode
 echo bind -v > ~/.editrc              # GNU readline
