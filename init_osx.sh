@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Homebrew
+# homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 
@@ -12,12 +12,16 @@ brew install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Launch vim and run :PluginInstall
 
-# autonev
-brew install autoenv
+# zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-# iterm2 and solarized
-# TODO
+# powerline
+brew install python
+pip install --user powerline-status
 
-# Set dotfiles
-./setup.sh
+# iterm2
+# Launch iterm and import from dotfiles/iterm2, and also import fonts
+
+# dotfiles
+./init_dotfiles.sh
 

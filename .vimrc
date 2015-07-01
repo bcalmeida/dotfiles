@@ -49,13 +49,18 @@ colorscheme hybrid
 " NERDTreeTabs
 map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
+" ==== Powerline ====
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 " ==== General ====
 syntax on
 set t_Co=256	" 256 colors
 set background=dark
 set hls		" Highlight search
 set number	" Show line numbers
-set title	" Title of file on tab
+"set title	" Title of file on tab
 set autoread
 
 " Indentation
@@ -68,6 +73,10 @@ augroup CursorLine
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 augroup END
+
+" No beeping sound
+set vb
+set t_vb=
 
 " ==== Language specific indentation ====
 " shiftwidth: size of indentation operations (=tabstop)
