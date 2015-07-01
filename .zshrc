@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/bruno/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -56,17 +56,12 @@ plugins=(git)
 # Homebrew
 export PATH="/usr/local/bin:$PATH"
 
-# Powerline path
-if [ -d "$HOME/Library/Python/2.7/bin" ]; then
-    PATH="$HOME/Library/Python/2.7/bin:$PATH"
-fi
-
 source $ZSH/oh-my-zsh.sh
 
 # Powerline, needs to be after sourcing
 powerline-daemon -q
 # . {powerline root directory (pip show powerline-status)}/powerline/bindings/zsh/powerline.zsh
-. $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+. $(brew --prefix)/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Vi mode
 bindkey -v
