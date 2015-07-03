@@ -30,6 +30,11 @@ Plugin 'paredit.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" ==== Powerline ====
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 " ==== Color Schemes ====
 " Solarized
 " colorscheme solarized
@@ -40,8 +45,8 @@ filetype plugin indent on    " required
 " let g:molokai_original = 1
 
 " Hybrid
-let g:hybrid_use_Xresources = 1		" When using hybrid color palette
 colorscheme hybrid
+let g:hybrid_use_Xresources = 1
 
 " ==== Plugin specifics ====
 
@@ -49,19 +54,12 @@ colorscheme hybrid
 " NERDTreeTabs
 map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
-" ==== Powerline ====
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 " ==== General ====
 syntax on
 set t_Co=256	" 256 colors
 set background=dark
 set hls		" Highlight search
 set number	" Show line numbers
-"set title	" Title of file on tab
-set autoread
 
 " Indentation
 set autoindent
@@ -77,6 +75,14 @@ augroup END
 " No beeping sound
 set vb
 set t_vb=
+
+" Auto read if file change
+set autoread " Apply only to certain events (:h timestamp). Line below to make it more frenquent
+au FocusGained,BufEnter,BufWinEnter,CursorHold,CursorMoved * :checktime
+
+" ==== Custom keys ====
+map <Leader>w :w<CR>
+map <Leader>q :q<CR>
 
 " ==== Language specific indentation ====
 " shiftwidth: size of indentation operations (=tabstop)
