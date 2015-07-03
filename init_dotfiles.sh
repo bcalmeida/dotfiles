@@ -3,7 +3,7 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 function init_file {
-	if [ -f $1 ]; then
+	if [ -f ~/$1 ]; then
 		rm ~/$1
 	fi
 	ln -s ${BASEDIR}/$1 ~/$1
@@ -24,5 +24,5 @@ init_file .bash_profile
 init_file .zshrc
 
 # vi mode
-echo bind -v > ~/.editrc              # GNU readline
-echo set editing-mode vi > ~/.inputrc # BSD libedit
+echo "bind -v" > ~/.editrc              # GNU readline
+echo "set editing-mode vi" > ~/.inputrc # BSD libedit
