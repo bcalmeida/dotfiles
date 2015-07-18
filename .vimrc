@@ -18,13 +18,15 @@ Plugin 'w0ng/vim-hybrid'
 " Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
 
-" CoffeeScript
-Plugin 'kchmck/vim-coffee-script'
+" Languages
+Plugin 'kchmck/vim-coffee-script' " CoffeeScript
 
-" Clojure
-Plugin 'tpope/vim-fireplace'
-Plugin 'paredit.vim'
+Plugin 'wavded/vim-stylus'        " Stylus (CSS)
+
+Plugin 'tpope/vim-fireplace'      " Clojure
+Plugin 'paredit.vim'              " Clojure
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,6 +56,10 @@ let g:hybrid_use_Xresources = 1
 " NERDTreeTabs
 map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
+" Ctrl P
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " ==== General ====
 syntax on
 set t_Co=256	" 256 colors
@@ -80,9 +86,22 @@ set t_vb=
 set autoread " Apply only to certain events (:h timestamp). Line below to make it more frenquent
 au FocusGained,BufEnter,BufWinEnter,CursorHold,CursorMoved * :checktime
 
+" Always show statusline
+" 0: never
+" 1: only if there are at least two windows (this one is the default)
+" 2: always
+set laststatus=2
+
 " ==== Custom keys ====
+" Easier save/quit
 map <Leader>w :w<CR>
 map <Leader>q :q<CR>
+
+" Save movement around splits
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " ==== Language specific indentation ====
 " shiftwidth: size of indentation operations (=tabstop)
@@ -105,6 +124,7 @@ autocmd FileType javascript set shiftwidth=2|set tabstop=2|set expandtab|set sof
 " CoffeeScript
 " No tabs. Tabs are 4 space characeters.
 autocmd BufNewFile,BufReadPost *.coffee set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
+autocmd BufNewFile,BufReadPost *.cson setfiletype coffee
 
 " HTML
 autocmd FileType html set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
@@ -116,6 +136,9 @@ autocmd BufNewFile,BufReadPost *.feature set shiftwidth=2|set tabstop=2|set expa
 " Could also just use ':set filetype=clojure'
 " To override any detected filetype, use it like 'set filetype=clojure'
 autocmd BufRead,BufNewFile *.cljs.hl setfiletype clojure
+
+" Ruby
+autocmd FileType ruby set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
 
 " ==== ETC ====
 " Per-directory .vimrc
