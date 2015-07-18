@@ -49,19 +49,18 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git npm)
 
 # User configuration
+source $ZSH/oh-my-zsh.sh
 
 # Homebrew
 export PATH="/usr/local/bin:$PATH"
 
-source $ZSH/oh-my-zsh.sh
-
 # Powerline, needs to be after sourcing
+export POWERLINE_ROOT="$(brew --prefix)/lib/python2.7/site-packages" # pip show powerline-status
 powerline-daemon -q
-# . {powerline root directory (pip show powerline-status)}/powerline/bindings/zsh/powerline.zsh
-. $(brew --prefix)/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. $POWERLINE_ROOT/powerline/bindings/zsh/powerline.zsh
 
 # Vi mode
 bindkey -v

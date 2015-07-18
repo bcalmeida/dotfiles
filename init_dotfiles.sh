@@ -23,6 +23,9 @@ init_file .bash_profile
 # zsh
 init_file .zshrc
 
+# tmux
+init_file .tmux.conf
+
 # vi mode
 echo "bind -v" > ~/.editrc              # GNU readline
 echo "set editing-mode vi" > ~/.inputrc # BSD libedit

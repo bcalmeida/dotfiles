@@ -19,6 +19,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Languages
 Plugin 'kchmck/vim-coffee-script' " CoffeeScript
