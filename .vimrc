@@ -22,12 +22,19 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " Languages
+" CoffeeScript
 Plugin 'kchmck/vim-coffee-script' " CoffeeScript
 
-Plugin 'wavded/vim-stylus'        " Stylus (CSS)
+" Slim (Rails template engine)
+"Plugin 'slim-template/vim-slim.git'
+Plugin 'onemanstartup/vim-slim.git'
 
-Plugin 'tpope/vim-fireplace'      " Clojure
-Plugin 'paredit.vim'              " Clojure
+" Stylus (CSS)
+" Plugin 'wavded/vim-stylus'
+
+" Clojure
+" Plugin 'tpope/vim-fireplace'
+" Plugin 'paredit.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
