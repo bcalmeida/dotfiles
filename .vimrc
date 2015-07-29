@@ -21,6 +21,9 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Extras
+Plugin 'vim-scripts/vim-auto-save'
+
 " Languages
 " CoffeeScript
 Plugin 'kchmck/vim-coffee-script' " CoffeeScript
@@ -67,6 +70,12 @@ map <Leader>t <plug>NERDTreeTabsToggle<CR>
 " Ctrl P
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" AutoSave
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_silent = 1  " do not display the auto-save notification
+" let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option (may affect other plugins and break things)
+" let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 
 " ==== General ====
 syntax on
