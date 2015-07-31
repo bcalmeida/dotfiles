@@ -716,7 +716,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles/misc/iterm2-settings</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -743,15 +743,15 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>807 209 502 210 0 0 1440 877 </string>
+	<string>578 360 502 82 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>289 77 924 485 0 0 1440 877 </string>
+	<string>264 157 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>120 340 650 476 0 0 1440 877 </string>
+	<string>308 364 570 426 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>34 13 1434 864 0 0 1440 900 </string>
+	<string>578 246 570 426 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>685 233 650 451 0 0 1440 878 </string>
+	<string>685 248 570 426 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4201,11 +4201,11 @@
 			<key>Name</key>
 			<string>hybrid</string>
 			<key>Non Ascii Font</key>
-			<string>SauceCodePowerline-Regular 12</string>
+			<string>SourceCodePro-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 13</string>
+			<string>SourceCodePro-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5833,7 +5833,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453640003.24837297</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>457589694.74628597</real>
+	<real>460009237.36942202</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -5896,7 +5896,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-07-03T02:32:37Z</date>
+	<date>2015-07-31T04:12:00Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
