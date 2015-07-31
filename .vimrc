@@ -109,6 +109,10 @@ au FocusGained,BufEnter,BufWinEnter,CursorHold,CursorMoved * :checktime
 " 2: always
 set laststatus=2
 
+" Open splits more naturally: below and to the right
+set splitbelow
+set splitright
+
 " ==== Custom keys ====
 " Easier save/quit
 map <Leader>w :w<CR>
