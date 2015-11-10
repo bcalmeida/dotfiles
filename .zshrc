@@ -83,6 +83,10 @@ _flex_and_yacc () {
 }
 alias gfy=_flex_and_yacc
 
+# Ruby rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
