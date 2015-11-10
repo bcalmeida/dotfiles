@@ -124,6 +124,9 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Copy whole file to clipboard (used hackerrank, leetcode, etc...)
+map <Leader>y ggvG"*y
+
 " ==== Language specific indentation ====
 " shiftwidth: size of indentation operations (=tabstop)
 " tabstop: tab size
