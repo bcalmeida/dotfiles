@@ -65,6 +65,24 @@ powerline-daemon -q
 # Vi mode
 bindkey -v
 
+# CES-41 helpers - flex and yacc
+alias nyacc="/usr/local/Cellar/bison/3.0.4/bin/yacc"
+_gcc_and_flex() {
+	filename=${1%.*};
+	flex $filename.lex && gcc -ll lex.yy.c -o $filename.out
+}
+alias gflex=_gcc_and_flex
+_gcc_and_yacc () {
+	filename=${1%.*};
+	nyacc $filename.y && gcc y.tab.c main.c yyerror.c -ll -o $filename.out
+}
+alias gyacc=_gcc_and_yacc
+_flex_and_yacc () {
+	filename=${1%.*};
+	flex $filename.lex && nyacc $filename.y && gcc y.tab.c main.c yyerror.c -ll -o $filename.out
+}
+alias gfy=_flex_and_yacc
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

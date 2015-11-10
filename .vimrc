@@ -161,6 +161,10 @@ autocmd BufRead,BufNewFile *.cljs.hl setfiletype clojure
 " Ruby
 autocmd FileType ruby set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
 
+" Lex and Yacc
+autocmd BufNewFile,BufReadPost *.lex set shiftwidth=4|set tabstop=4
+autocmd BufNewFile,BufReadPost *.y   set shiftwidth=4|set tabstop=4
+
 " ==== ETC ====
 " Per-directory .vimrc
 " set exrc            " enable per-directory .vimrc files
