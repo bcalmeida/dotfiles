@@ -19,6 +19,10 @@ brew install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Launch vim and run :PluginInstall
 
+# tmux
+brew install tmux
+brew install reattach-to-user-namespace
+
 # iterm2
 # Import fonts, launch iterm and import from iterm2-settings folder
 

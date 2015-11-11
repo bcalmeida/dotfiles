@@ -113,6 +113,9 @@ set laststatus=2
 set splitbelow
 set splitright
 
+" Copy/paste from clipboard by default
+set clipboard=unnamed
+
 " ==== Custom keys ====
 " Easier save/quit
 map <Leader>w :w<CR>
