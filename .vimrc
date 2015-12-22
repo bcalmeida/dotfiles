@@ -11,8 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugins
 " Color schemes
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
+" Plugin 'altercation/vim-colors-solarized'
+" Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 
 " Navigation
