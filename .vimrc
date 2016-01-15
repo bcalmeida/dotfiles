@@ -30,7 +30,7 @@ Plugin 'kchmck/vim-coffee-script' " CoffeeScript
 
 " Slim (Rails template engine)
 "Plugin 'slim-template/vim-slim.git'
-Plugin 'onemanstartup/vim-slim.git'
+"Plugin 'onemanstartup/vim-slim.git'
 
 " Stylus (CSS)
 " Plugin 'wavded/vim-stylus'
