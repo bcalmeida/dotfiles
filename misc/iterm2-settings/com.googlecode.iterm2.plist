@@ -743,13 +743,13 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>578 360 502 82 0 0 1440 877 </string>
+	<string>578 231 502 77 0 0 1440 900 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>264 157 924 485 0 0 1440 877 </string>
+	<string>264 157 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>308 364 570 426 0 0 1440 877 </string>
+	<string>721 12 718 858 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>578 246 570 426 0 0 1440 877 </string>
+	<string>721 12 717 858 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>685 248 570 426 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -3476,11 +3476,11 @@
 			<key>Name</key>
 			<string>solarized-light</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SourceCodePro-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 14</string>
+			<string>SourceCodePro-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -5833,7 +5833,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453640003.24837297</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>460009237.36942202</real>
+	<real>473673504.46743</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -5896,7 +5896,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-07-31T04:12:00Z</date>
+	<date>2016-01-03T19:13:52Z</date>
+	<key>SUSkippedVersion</key>
+	<string>2.1.4</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
