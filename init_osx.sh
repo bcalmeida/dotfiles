@@ -17,9 +17,9 @@ pip install powerline-status # no need for --user flag when using brewed python
 # vim
 brew install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-mkdir ~/swap
-mkdir ~/backup
-mkdir ~/undo
+mkdir ~/.vim/backup
+mkdir ~/.vim/swap
+mkdir ~/.vim/undo
 # Launch vim and run :PluginInstall
 
 # tmux
