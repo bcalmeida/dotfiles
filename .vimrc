@@ -13,7 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 " Color schemes
 " Plugin 'altercation/vim-colors-solarized'
 " Plugin 'tomasr/molokai'
-Plugin 'w0ng/vim-hybrid'
+" Plugin 'w0ng/vim-hybrid'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'
@@ -44,9 +44,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " ==== Powerline ====
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
 
 " ==== Color Schemes ====
 " Solarized
@@ -58,8 +58,8 @@ python del powerline_setup
 " let g:molokai_original = 1
 
 " Hybrid
-colorscheme hybrid
-let g:hybrid_custom_term_colors = 1
+" colorscheme hybrid
+" let g:hybrid_custom_term_colors = 1
 
 " ==== Plugin specifics ====
 
@@ -79,7 +79,7 @@ let g:auto_save_silent = 1  " do not display the auto-save notification
 
 " ==== General ====
 syntax on
-set t_Co=256	" 256 colors
+"set t_Co=256	" 256 colors
 set background=dark
 set hls		" Highlight search
 set number	" Show line numbers
@@ -144,6 +144,10 @@ autocmd FileType python set shiftwidth=4|set tabstop=4|set expandtab|set softtab
 " set textwidth=79  " lines longer than 79 columns will be broken
 " set shiftround    " round indent to multiple of 'shiftwidth'
 " set autoindent    " align the new line indent with the previous line
+
+" C++ (4 spaces)
+autocmd FileType cpp set shiftwidth=4|set tabstop=4|set expandtab|set softtabstop=4
+autocmd BufNewFile,BufRead *.h setfiletype cpp
 
 " JavaScript
 autocmd FileType javascript set shiftwidth=2|set tabstop=2|set expandtab|set softtabstop=2
